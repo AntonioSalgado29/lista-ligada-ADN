@@ -39,7 +39,7 @@ public class Main {
         System.out.println("");
         
         
-       //nodo1
+       /**
          listaLigada meList=new listaLigada();
          nodo node=new nodo(6);
          System.out.println("posicion de memoria otorgada: "+node);
@@ -54,7 +54,7 @@ public class Main {
          System.out.println("nodo siguiente al primero: "+node.getNext());
        
          System.out.println("numero de elementos en la lista: "+meList.getLengthL());
-       
+       */
          
         /**
         listaDoble meList=new listaDoble();
