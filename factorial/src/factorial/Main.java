@@ -29,10 +29,12 @@ public class Main {
         adnLista nodoADN=new adnLista();
         
         System.out.println("uno por uno");
-        
+      
         for(int i=0;i<adnString.length();i++){
+            if (adnString.charAt(i)=='A' || adnString.charAt(i)=='T'|| adnString.charAt(i)=='C'|| adnString.charAt(i)=='G'){
             System.out.println(adnString.charAt(i));
             nodoADN.insertAtTail(adnString.charAt(i));
+            }
         }
         System.out.println("");
         
