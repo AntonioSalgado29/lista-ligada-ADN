@@ -31,12 +31,46 @@ public class Main {
         System.out.println("uno por uno");
       
         for(int i=0;i<adnString.length();i++){
-            if (adnString.charAt(i)=='A' || adnString.charAt(i)=='T'|| adnString.charAt(i)=='C'|| adnString.charAt(i)=='G'){
+            
+            if (adnString.charAt(i)=='A' && comprobante==0 || adnString.charAt(i)=='T' && comprobante==0 || adnString.charAt(i)=='C' && comprobante==0 || adnString.charAt(i)=='G' && comprobante==0){ 
+            System.out.println(adnString.charAt(i));
+            nodoADN.insertAtFront(adnString.charAt(i));
+            comprobante=1;
+            if (adnString.charAt(i)=='A'){
+            nodoADNComp.insertAtFront('C');
+            }
+            if (adnString.charAt(i)=='C'){
+            nodoADNComp.insertAtFront('A');
+            }
+            if (adnString.charAt(i)=='T'){
+            nodoADNComp.insertAtFront('G');
+            }
+            if (adnString.charAt(i)=='G'){
+            nodoADNComp.insertAtFront('T');
+            }
+            }else{
+            if (adnString.charAt(i)=='A' || adnString.charAt(i)=='T'|| adnString.charAt(i)=='C'|| adnString.charAt(i)=='G'){               
             System.out.println(adnString.charAt(i));
             nodoADN.insertAtTail(adnString.charAt(i));
+            if (adnString.charAt(i)=='A'){
+            nodoADNComp.insertAtTail('C');
+            }
+             if (adnString.charAt(i)=='C'){
+            nodoADNComp.insertAtTail('A');
+            }
+            if (adnString.charAt(i)=='T'){
+            nodoADNComp.insertAtTail('G');
+            }
+            if (adnString.charAt(i)=='G'){
+            nodoADNComp.insertAtTail('T');
+            }
+              }
             }
         }
         System.out.println("");
+        System.out.println(nodoADN);
+        System.out.println(nodoADNComp);
+        
         
         
        /**
